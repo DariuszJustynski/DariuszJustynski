@@ -1,11 +1,11 @@
-- 👋 Hi, I’m @DariuszJustynski
-- 👀 I’m interested in mastering my programming skills.
-- 🌱 I’m currently learning how to use node.js and webmaster tools.
-- 💞️ I’m looking to collaborate on various projects related to ecology, cybersecurity and AI.
-- 📫 How to reach me? Add me on discord: @dariuszjustynski or Linkedin: dariuszjustynski.
-- ⚡ Fun fact: I know juggling.
+👋 Hi, I’m @DariuszJustynski
+👀 I’m interested in mastering my programming skills.
+🌱 I’m currently learning how to use node.js and webmaster tools.
+💞️ I’m looking to collaborate on various projects related to ecology, cybersecurity and AI.
+📫 How to reach me? Add me on discord: @dariuszjustynski or Linkedin: dariuszjustynski.
+⚡ Fun fact: I know juggling.
 
-- Coding Principles
+Coding Principles
 
 1. Never skip commits. Never.
 Every change matters. History is part of the system.
