@@ -1,37 +1,48 @@
-## My Bio
-- 👋 Hi, I’m @DariuszJustynski
-- 👀 I’m interested in mastering my programming skills.
-- 🌱 I’m currently learning how to use node.js and webmaster tools.
-- 💞️ I’m looking for collaboration on various projects related to ecology, cybersecurity and AI.
-- 📫 How to reach me? Add me on discord: @dariuszjustynski or Linkedin: dariuszjustynski.
-- ⚡ Fun fact: I know juggling.
+# chat-archive-browser
 
-## Coding Principles
+Prosta aplikacja Electron + Node.js do ręcznego archiwizowania czatów z BrowserView.
 
-1. **🧾 Never skip commits. Never.**  
-    - Every change matters. History is part of the system.
+## Wymagania
 
-2. **🦠 Input is always malware. Always.**  
-    - Trust nothing. Validate everything.
+- Node.js 20.x (LTS)
+- npm
 
-3. **🛠️ Among users, be the developer. Be.**  
-    - Understand the system from the inside, not from the interface.
+## Instalacja i uruchomienie
 
-4. **💡 Ideas are forever.**  
-    - Code decays. Concepts compound.
+```bash
+npm install
+npm start
+```
 
-5. **🌊 People come and go. Let it flow.**  
-    - Systems must survive personnel changes.
+## Testy
 
-6. **💎 Diamond hands.**  
-    - Long-term thinking beats short-term optimization.
+```bash
+npm test
+```
 
-7. **🪨 Granite core.**  
-    - Deterministic, heuristic, low-level, resilient by design.
+## Jak działa
 
-8. **🔐 Publish theory. Sell practice.**  
-    - Share intent. Protect implementation.
-<!---
-DariuszJustynski/DariuszJustynski is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+1. Otwórz aplikację i przejdź do `https://chatgpt.com`.
+2. Zaloguj się ręcznie w osadzonej przeglądarce (BrowserView).
+3. Otwórz konkretny czat.
+4. Kliknij **Dodaj bieżący czat do kolejki**.
+5. Zaznacz rekordy w checklistcie.
+6. Wybierz formaty (HTML/PDF/TXT).
+7. Kliknij **Zapisz zaznaczone**.
+
+Każdy czat trafia do własnego folderu:
+
+`YYYY-MM-DD_HH-mm-ss__slug-title`
+
+w katalogu `output_chat_store` (lub innym wybranym przez użytkownika).
+
+## Bezpieczeństwo
+
+- `contextIsolation: true`
+- `nodeIntegration: false`
+- `sandbox: true`
+- dostęp do IPC tylko przez `preload` i whitelist API.
+
+## Przechowywanie danych
+
+- `queue.json` i `settings.json` są zapisywane w `app.getPath('userData')` z atomowym zapisem.
