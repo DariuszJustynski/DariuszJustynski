@@ -1,0 +1,22 @@
+{
+  "name": "chat-archive-browser",
+  "version": "1.0.0",
+  "description": "Electron browser to queue and export chat pages",
+  "main": "src/main/main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "node --test tests/unit/*.test.js",
+    "lint": "echo 'Lint not configured'"
+  },
+  "keywords": [
+    "electron",
+    "chat",
+    "archive"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^31.0.2",
+    "uuid": "^11.0.3"
+  }
+}
